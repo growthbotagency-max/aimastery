@@ -714,99 +714,36 @@ footer{
 .footer-links{display:flex;gap:24px;}
 .footer-link{font-size:12px;color:var(--muted);text-decoration:none;font-family:'DM Mono',monospace;letter-spacing:1px;}
 .footer-right{font-family:'DM Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:1px;}
+  }
+  
+  @media (max-width: 768px){
+
+  .nav-right{ gap:10px; }
+  .nav-link{ display:none; }
+
+  .hero-inner{ padding:0 16px; }
+  .hero-h1{ font-size:32px; }
+
+  .problem-grid{ grid-template-columns:1fr; }
+
+  .modules-grid{ grid-template-columns:1fr; }
+
+  .testimonials{ grid-template-columns:1fr; }
+
+  .bonus-grid{ grid-template-columns:1fr; }
+
+  .earnings-strip{ grid-template-columns:1fr 1fr; }
+
+  .price-center{ flex-direction:column; }
+
+  .app-steps{ grid-template-columns:1fr; }
+  .app-steps::before{ display:none; }
+
+  .final-h{ font-size:32px; }
+
+  footer{ flex-direction:column; text-align:center; }
+}
 </style>
-  /* ================= MOBILE RESPONSIVE FIX ================= */
-
-/* Container fix */
-@media (max-width: 768px){
-  .container{
-    padding:0 16px;
-  }
-
-  nav{
-    padding:12px 16px;
-    flex-wrap:wrap;
-    gap:10px;
-  }
-
-  .nav-right{
-    gap:10px;
-  }
-
-  .nav-link{
-    display:none; /* clean mobile navbar */
-  }
-
-  /* HERO */
-  .hero-inner{
-    padding:0 16px;
-  }
-
-  .hero-h1{
-    font-size:32px;
-    letter-spacing:-1px;
-  }
-
-  .hero-h1 .line2{
-    font-size:24px;
-  }
-
-  .hero-sub{
-    font-size:14px;
-  }
-
-  .hero-stats{
-    flex-direction:column;
-  }
-
-  .hstat{
-    border-right:none;
-    border-bottom:1px solid var(--border);
-  }
-
-  /* GRID FIXES */
-  .problem-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-  }
-
-  .modules-grid{
-    grid-template-columns:1fr;
-  }
-
-  .testimonials{
-    grid-template-columns:1fr;
-  }
-
-  .bonus-grid{
-    grid-template-columns:1fr;
-  }
-
-  .earnings-strip{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .price-center{
-    flex-direction:column;
-  }
-
-  .app-steps{
-    grid-template-columns:1fr;
-  }
-
-  .app-steps::before{
-    display:none;
-  }
-
-  /* FINAL CTA */
-  .final-h{
-    font-size:32px;
-  }
-
-  footer{
-    flex-direction:column;
-    text-align:center;
-  }
 }
 </head>
 <body>
